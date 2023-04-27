@@ -1,0 +1,101 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+:focus, :active, a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: PingFang SC;
+  src: url("PingFangSCRegular.ebfb95c6.woff") format("woff2"), url("PingFangSCRegular.e56618a0.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  color: #ffffffd9;
+  background: #1a1a1a;
+  font-family: PingFang SC;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+body .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #0d0d0d;
+  padding: 48px 0;
+}
+
+.header .header__logo {
+  cursor: pointer;
+}
+
+.header .header__title {
+  text-transform: capitalize;
+  padding-top: 40px;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+/*# sourceMappingURL=index.867122b9.css.map */
