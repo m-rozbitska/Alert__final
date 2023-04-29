@@ -1,0 +1,109 @@
+body {
+	font-family: 'PingFang SC';
+	background: $background;
+	font-size: 14px;
+	line-height: 22px;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 48px 0px;
+	background: $headerbackground;
+}
+
+.header__logo {
+	cursor: pointer;
+	}
+
+.header__title {
+	padding-top: 40px;
+	font-size: 60px;
+	line-height: 80px;
+	text-transform: capitalize;
+	}
+
+.section {
+	padding: 64px 0px;
+}
+
+.section__title {
+	font-size: 32px;
+	line-height: 48px;
+}
+
+.section__subtitle {
+	padding: 40px 0px 24px 0px;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.alert__wrapper {
+	max-width: 672px;
+	background: #1A1A1A;
+	border: 1px dashed $border;
+	border-radius: 5px;
+	gap: 24px;
+	padding: 16px 16px 16px 16px;
+}
+
+.alert__item {
+	position: relative;
+	margin: 16px 0px 24px 0px;
+	padding: 9px 0px 9px 0px;
+	gap: 8px;
+	isolation: isolate;
+	border-radius: 4px;
+
+	&.alert__item--info {
+		background-color: $bgPurple;
+	}
+	
+	&.alert__item--warning {
+		background-color: $bgBrown;
+	}
+	
+	&.alert__item--danger {
+		background-color: $bgWinered;
+	}
+	
+	&.alert__item--success {
+		background-color: $bgGreen;
+	}	
+}
+
+
+.alert__media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 9px;
+}
+
+.alert__close {
+	position: absolute;
+	top: 10px;
+	left: 600px;
+	padding: 8px;
+	background-image: url(../images/close.svg);
+
+	&.alert__close--info {
+		background-color: $closePurple;	
+	}
+
+	&.alert__close--warning {
+		background-color: $closeBrown;
+	}
+
+	&.alert__close--danger {
+		background-color: $closeWinered;
+	}
+
+	&.alert__close--success {
+		background-color: $closeGreen;
+	}
+}	
