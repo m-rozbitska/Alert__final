@@ -122,6 +122,10 @@ body {
   padding: 16px;
 }
 
+.alert--secondblock {
+  padding: 89px 0 153px;
+}
+
 .alert__item {
   isolation: isolate;
   border-radius: 4px;
@@ -131,20 +135,37 @@ body {
   position: relative;
 }
 
+.alert__item.alert__item--secondblock {
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 12px 9px 16px;
+  display: flex;
+}
+
 .alert__item.alert__item--info {
   background-color: #907ff029;
+  border-color: #907ff03d;
 }
 
 .alert__item.alert__item--warning {
   background-color: #ffa62a29;
+  border-color: #ffa62a3d;
 }
 
 .alert__item.alert__item--danger {
   background-color: #ee534729;
+  border-color: #ee53473d;
 }
 
 .alert__item.alert__item--success {
   background-color: #3cd6a329;
+  border-color: #3cd6a33d;
+}
+
+.alert__item.alert__item--border {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
 }
 
 .alert__media {
@@ -154,28 +175,67 @@ body {
   display: flex;
 }
 
+.alert__media.alert__media--thirdblock {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  display: flex;
+}
+
+.alert__action {
+  color: #907ff0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
 .alert__close {
+  background-color: #0000;
   background-image: url("close.b195aaf1.svg");
-  padding: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6px;
+}
+
+.alert__close.alert__close--position {
   position: absolute;
   top: 10px;
   left: 600px;
 }
 
-.alert__close.alert__close--info {
-  background-color: #907ff100;
+.alert__button {
+  align-items: center;
+  gap: 16px;
+  display: flex;
 }
 
-.alert__close.alert__close--warning {
-  background-color: #ffa62100;
+.alert__btn {
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
-.alert__close.alert__close--danger {
-  background-color: #ee534100;
+.alert__btn.alert__btn--info {
+  background: #907ff0;
 }
 
-.alert__close.alert__close--success {
-  background-color: #3cd6a100;
+.alert__btn.alert__btn--warning {
+  background: #ffa62a;
+}
+
+.alert__btn.alert__btn--danger {
+  background: #f07369;
+}
+
+.alert__btn.alert__btn--success {
+  background: #3cd6a3;
+}
+
+.alert__btn.alert__btn--large {
+  padding: 6px 16px;
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=index.867122b9.css.map */
