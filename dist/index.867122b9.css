@@ -69,6 +69,14 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
 }
 
+@font-face {
+  font-family: PingFang SC;
+  src: url("PingFangSCRegular.ebfb95c6.woff") format("woff2"), url("PingFangSCRegular.e56618a0.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   color: #ffffffd9;
   background: #1a1a1a;
